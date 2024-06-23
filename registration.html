@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle Rental Registration</title>
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body class="registration-body">
+    <div class="registration-container">
+        <h2>Bicycle Rental Registration</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="bicycleType">Bicycle Type:</label>
+                <select id="bicycleType" name="bicycleType" required>
+                    <option value="Mountain">Mountain Bike</option>
+                    <option value="Road">Road Bike</option>
+                    <option value="Hybrid">Hybrid Bike</option>
+                    <option value="Electric">Electric Bike</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickupLocation">Pickup Location:</label>
+                <input type="text" id="pickupLocation" name="pickupLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="dropLocation">Drop Location:</label>
+                <input type="text" id="dropLocation" name="dropLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="rentalDuration">Rental Duration (hours):</label>
+                <select id="rentalDuration" name="rentalDuration" required>
+                    <option value="1">1 hour</option>
+                    <option value="2">2 hours</option>
+                    <option value="3">3 hours</option>
+                    <option value="4">4 hours</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="Paytm">Paytm</option>
+                    <option value="PhonePe">PhonePe</option>
+                    <option value="GooglePay">Google Pay</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Cash">Cash</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
